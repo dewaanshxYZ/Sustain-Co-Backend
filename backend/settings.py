@@ -29,7 +29,7 @@ SECRET_KEY = os.getenv('DJANGO_SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['sustainandcompany.com']
+ALLOWED_HOSTS = ['api.sustainandcompany.com', 'www.api.sustainandcompany.com', 'localhost', '43.204.142.162']
 
 
 # Application definition
@@ -86,7 +86,7 @@ WSGI_APPLICATION = 'backend.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'SUSTAIN_DB',
+        'NAME': 'sustain_db',
         'USER': 'sustain_admin',
         'PASSWORD': 'sustain_admin',
         'HOST': 'localhost',

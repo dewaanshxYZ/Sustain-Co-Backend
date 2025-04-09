@@ -5,7 +5,7 @@ import plotly.graph_objs as go
 # Load your data
 for i in range(0, 40):  # Loop from 1 to 40
     # Construct the filename
-    filename = f'../data/full_compiled_data{i}.csv'
+    filename = f'/home/ubuntu/backend/data/full_compiled_data{i}.csv'
     # Load the dataset into a DataFrame
     df = pd.read_csv(filename)
     # Create a dynamic variable name like df1, df2, ..., df40
