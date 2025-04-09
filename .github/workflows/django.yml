@@ -45,6 +45,10 @@ jobs:
           # Install new npm packages if any
           pip install -r requirements.txt
 
+          # Restart gunicorn and nginx
+          sudo systemctl restart gunicorn
+          sudo systemctl restart nginx
+
           # Remove key
           rm ec2-key.pem
           EOF
